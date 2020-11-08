@@ -1,0 +1,43 @@
+@import "./utilities/variables";
+
+html {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+  // box-sizing: border-box;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.App {
+  // height: 100vh;
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 3.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary-light, 0.85),
+    rgba($color-primary-dark, 0.85)
+  );
+  background-clip: text;
+  letter-spacing: 0.3rem;
+}

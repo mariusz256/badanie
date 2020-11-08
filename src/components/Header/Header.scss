@@ -1,0 +1,82 @@
+@import "../../utilities/variables";
+
+header {
+  margin: 0;
+  padding: 0;
+  height: 85vh;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+  background-size: cover;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.85),
+      rgba($color-primary-dark, 0.85)
+    ),
+    url(../../assets/plansza4.jpg);
+  background-position: top;
+  position: relative;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 50vw;
+  color: $color-grey-light-1;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+
+  &-svg {
+    height: 100%;
+  }
+}
+
+.Link {
+  display: flex;
+  padding: 2rem;
+  height: 7rem;
+  align-items: center;
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+}
+
+.title {
+  margin-top: 10vh;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  justify-content: space-around;
+  letter-spacing: 0.3rem;
+
+  & h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 4rem;
+  }
+
+  & p {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+  }
+}
