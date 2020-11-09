@@ -25,7 +25,7 @@ function Header() {
       <div className="title">
         <h1>Badanie Psychologiczne</h1>
         <p>Certyfikowane testy psychologiczne</p>
-        <Button title="nasza oferta" to="/badania" />
+        <Button title="nasze badania" to="/badania" />
       </div>
     </header>
   );

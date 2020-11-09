@@ -38,4 +38,17 @@ h2 {
   );
   background-clip: text;
   letter-spacing: 0.3rem;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 5px;
+    margin-top: 1rem;
+
+    background: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.85),
+      rgba($color-primary-dark, 0.85)
+    );
+  }
 }

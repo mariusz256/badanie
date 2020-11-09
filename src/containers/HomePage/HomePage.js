@@ -4,7 +4,7 @@ import "./HomePage.scss";
 function HomePage() {
   return (
     <div className="HomePage">
-      <h2>Pracownia</h2>
+      <h2>o nas</h2>
 
       <p className="text">
         Pracownia testów psychologicznych zajmuje się wykonaniem badań
