@@ -5,7 +5,7 @@ header {
   padding: 0;
   height: 85vh;
   z-index: 10;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
   background-size: cover;
   background-image: linear-gradient(
@@ -13,7 +13,7 @@ header {
       rgba($color-primary-light, 0.85),
       rgba($color-primary-dark, 0.85)
     ),
-    url(../../assets/plansza4.jpg);
+    url(../../assets/plansza1.jpg);
   background-position: top;
   position: relative;
   font-size: 2rem;
