@@ -14,13 +14,13 @@ const container = {
   hover: {
     scale: 1.05,
     boxShadow: "0px 0px 2rem #fff",
-    transition: { duration: 0.3, ease: "easeIn" },
+    transition: { duration: 0.2, ease: "easeIn" },
   },
 
   initial: { scale: 1 },
   animate: {
     scale: [1.1, 1],
-
+    boxShadow: ["0px 0px 0rem #fff", "0px 0px 2rem #fff", "0px 0px 0rem #fff"],
     transition: {
       delay: 2,
       duration: 0.7,
