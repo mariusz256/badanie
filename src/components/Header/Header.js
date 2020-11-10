@@ -9,7 +9,7 @@ function Header() {
     <header>
       <div className="wrapper">
         <Link className="logo Link" to="/">
-          <img src={logo} className="logo-svg " alt="Badanie Psychologiczne" />
+          <img src={logo} className="logo-svg" alt="Badanie Psychologiczne" />
         </Link>
         <nav>
           <span className="Link">Badania</span>

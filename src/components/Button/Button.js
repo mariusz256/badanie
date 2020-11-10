@@ -20,7 +20,11 @@ const container = {
   initial: { scale: 1 },
   animate: {
     scale: [1.1, 1],
-    boxShadow: ["0px 0px 0rem #fff", "0px 0px 2rem #fff", "0px 0px 0rem #fff"],
+    boxShadow: [
+      "0px 0px 0rem #fff",
+      "0px 0px 2rem #fff",
+      "0px 0px 0npm startrem #fff",
+    ],
     transition: {
       delay: 2,
       duration: 0.7,

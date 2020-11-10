@@ -1,0 +1,17 @@
+@import "../../utilities/variables";
+
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-secondary;
+  height: 30rem;
+  width: 30rem;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    color: $color-primary;
+  }
+}
