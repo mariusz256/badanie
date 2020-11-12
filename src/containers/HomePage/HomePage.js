@@ -1,7 +1,11 @@
 import React from "react";
 import "./HomePage.scss";
-import psi from "../../assets/psi.svg";
+import { ReactComponent as Psi } from "../../assets/psi.svg";
 import Link from "../../components/Link/Link";
+import { ReactComponent as Badania } from "../../assets/badania.svg";
+import { ReactComponent as Contactus } from "../../assets/contactus.svg";
+import { ReactComponent as Wspolpraca } from "../../assets/wspolpraca.svg";
+import { ReactComponent as Info } from "../../assets/info.svg";
 
 function HomePage() {
   return (
@@ -32,25 +36,21 @@ function HomePage() {
         </section>
 
         <section className="HomePage__Links">
-          <Link
-            title="O nas"
-            brightness={{ "background-color": "#49515C" }}
-          ></Link>
-          <Link
-            title="O nas"
-            brightness={{ "background-color": "#404D52" }}
-          ></Link>
-          <Link
-            title="O nas"
-            brightness={{ "background-color": "#393B44" }}
-          ></Link>
-          <Link
-            title="O nas"
-            brightness={{ "background-color": "#4A495C" }}
-          ></Link>
+          <Link title="Badania">
+            <Badania className="icon" />
+          </Link>
+          <Link title="Kontakt">
+            <Contactus className="icon" />
+          </Link>
+          <Link title="współpraca">
+            <Wspolpraca className="icon" />
+          </Link>
+          <Link title="O nas">
+            <Info className="icon" />
+          </Link>
         </section>
       </div>
-      <img src={psi} className="psi-svg" alt="Psi" />
+      <Psi className="psi-svg" alt="Psi" />
     </div>
   );
 }

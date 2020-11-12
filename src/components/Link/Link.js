@@ -3,8 +3,9 @@ import "./Link.scss";
 
 function Link(props) {
   return (
-    <div className="Card" style={props.brightness}>
+    <div className="Card">
       <h2 className="Card__title">{props.title}</h2>
+      {props.children}
     </div>
   );
 }

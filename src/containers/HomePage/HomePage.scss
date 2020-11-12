@@ -3,22 +3,24 @@
 .HomePage {
   min-height: 100vh;
   height: 100%;
-  // background: $color-primary;
   align-items: center;
   position: relative;
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
+  overflow: hidden;
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: max-content;
+    min-height: 100vh;
     grid-template-areas: "content links";
     z-index: 1;
     justify-content: center;
-    width: 100%;
-    grid-column-gap: 2rem;
+    overflow: hidden;
+    perspective: 1000px;
   }
 
   & h1 {
@@ -29,35 +31,46 @@
     color: $color-secondary;
     font-weight: 600;
     // padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 5rem;
+  }
+
+  &__content {
+    align-self: center;
+    // justify-self: center;
+    grid-area: "content";
+    padding: 0 0rem 0rem 0rem;
   }
 
   &__text {
     font-size: 2rem;
     font-style: oblique;
     color: $color-secondary;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.3;
-    padding: 1rem 0;
-  }
-
-  &__content {
-    grid-area: "content";
-    align-self: center;
-    padding: 0 10rem 6rem 10rem;
+    padding: 0.5rem 0;
+    width: 70%;
+    // height: 50%;
+    // text-shadow: 1px 2px 10px $color-primary;
+    box-sizing: border-box;
   }
 
   &__Links {
     grid-area: "links";
-    // padding: 6rem 10rem 6rem 10rem;
-    align-self: center;
+    align-self: baseline;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-self: center;
-    width: 100%;
-    height: 100%;
-    // grid-template-areas: "button-1 button-2", "button-3 button-4";
+    align-self: center;
+    justify-items: center;
+    align-content: center;
+    width: 80%;
+    height: 50%;
+    // min-height: 100vh;
+    transform: rotateZ(5deg) rotateX(5deg);
+    padding: 10rem 0rem 10rem 0rem;
+    // background: $color-blue-dark;
+    box-sizing: border-box;
+    // overflow: hidden;
   }
 }
 
@@ -65,9 +78,12 @@
   height: 50rem;
   position: absolute;
   transform-origin: center;
-  opacity: 0.5;
-  top: 30%;
-  left: 5%;
+  opacity: 0.2;
+  top: 30rem;
+  left: 10rem;
   transform: translate(-50%, -50%);
   z-index: 0;
+  fill: $color-blue-dark;
+  // filter: drop-shadow(1rem 1rem 1rem $color-blue-dark);
+  // display: none;
 }
