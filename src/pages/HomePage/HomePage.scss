@@ -16,7 +16,6 @@
     z-index: 1;
     margin-top: 5rem;
     justify-content: center;
-    align-content: center;
     perspective: 1000px;
   }
 
@@ -93,17 +92,15 @@
 
   &__Links {
     grid-area: links;
-    // align-items: ;
+    align-items: start;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
-    // align-self: center;
     justify-items: baseline;
-    // align-content: center;
     width: 80%;
-    height: 50%;
+    height: 100%;
     transform: rotateZ(5deg) rotateX(5deg);
-    padding: 10rem 0rem 10rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
     box-sizing: border-box;
   }
 }

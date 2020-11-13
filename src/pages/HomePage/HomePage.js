@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.scss";
 import { ReactComponent as Psi } from "../../assets/psi.svg";
-import Link from "../../components/Link/Link";
+import Button from "../../components/Button/Button";
 import { ReactComponent as Badania } from "../../assets/badania.svg";
 import { ReactComponent as Contactus } from "../../assets/contactus.svg";
 import { ReactComponent as Wspolpraca } from "../../assets/wspolpraca.svg";
@@ -57,18 +57,18 @@ function HomePage() {
         </section>
 
         <section className="HomePage__Links">
-          <Link title="Badania">
+          <Button to="/badania" title="Badania">
             <Badania className="icon" />
-          </Link>
-          <Link title="Kontakt">
+          </Button>
+          <Button to="/kontakt" title="Kontakt">
             <Contactus className="icon" />
-          </Link>
-          <Link title="współpraca">
+          </Button>
+          <Button to="/" title="współpraca">
             <Wspolpraca className="icon" />
-          </Link>
-          <Link title="O nas">
+          </Button>
+          <Button to="/" title="O nas">
             <Info className="icon" />
-          </Link>
+          </Button>
         </section>
       </div>
     </div>
