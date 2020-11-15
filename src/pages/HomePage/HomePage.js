@@ -19,7 +19,7 @@ function HomePage() {
         <section className="HomePage__content">
           <div className="HomePage__content__HeaderWrapper">
             <Psi className="psi-svg" alt="Psi" />
-            <h1>Badania Psychologiczne</h1>
+            <h1>Badanie Psychologiczne</h1>
           </div>
           <div className="HomePage__text">
             <Brain className="Icons" />

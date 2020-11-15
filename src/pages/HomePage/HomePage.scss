@@ -92,13 +92,13 @@
 
   &__Links {
     grid-area: links;
-    align-items: start;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-self: center;
-    justify-items: baseline;
-    width: 80%;
-    height: 100%;
+    width: auto;
+    // height: 90%;
     transform: rotateZ(5deg) rotateX(5deg);
     padding: 0rem 0rem 0rem 0rem;
     box-sizing: border-box;

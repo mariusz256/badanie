@@ -1,0 +1,33 @@
+.Header {
+  height: auto;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 5rem;
+
+  & h1 {
+    z-index: 10;
+    margin: 0;
+    padding: 0 0;
+    font-style: italic;
+    font-size: 5rem;
+    color: $color-secondary;
+    font-weight: 600;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+  }
+  & .psi-svg {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -0%);
+    z-index: 0;
+    fill: $color-blue-light;
+    filter: drop-shadow(1rem 1rem 2rem $color-blue-dark);
+  }
+}

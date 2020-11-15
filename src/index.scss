@@ -29,11 +29,11 @@ body {
   background-color: $color-primary;
   background-image: linear-gradient(
       to right,
-      rgba($color-blue-light, 1),
-      rgba($color-primary, 0.75)
+      rgba($color-blue-light, 0.9),
+      rgba($color-primary, 0.5)
     ),
     url(./assets/plansza1.jpg);
-  background-position: left;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   // background: linear-gradient(

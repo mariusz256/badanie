@@ -1,5 +1,86 @@
 @import "../../utilities/variables";
 
-.logo-svg {
-  height: 7rem;
+.Header {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  height: 9rem;
+  width: 100%;
+  background-color: rgba($color-secondary, 0.9);
+
+  &__title {
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    width: max-content;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    &:visited,
+    &:link {
+      color: $color-primary;
+      text-decoration: none;
+    }
+
+    &__Psi {
+      height: 7rem;
+      width: 7rem;
+      fill: $color-blue-dark;
+      opacity: 0.6;
+      z-index: 1;
+      filter: drop-shadow(0rem 0rem 2rem $color-blue-dark);
+    }
+
+    &__text {
+      height: auto;
+      margin-left: -3.5rem;
+      color: $color-primary;
+      font-size: 3.5rem;
+      font-weight: 600;
+      z-index: 10;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    right: 0;
+    top: 0rem;
+    height: 9rem;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+
+    &__hamburger {
+      position: relative;
+      height: 1rem;
+      width: 6rem;
+      background-color: $color-primary;
+      border-radius: 5px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1rem;
+        width: 6rem;
+        // top: 2rem;
+        background-color: $color-primary;
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+      &::before {
+        top: 2rem;
+      }
+
+      &::after {
+        top: -2rem;
+      }
+    }
+  }
 }
