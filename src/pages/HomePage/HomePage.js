@@ -1,62 +1,117 @@
 import React from "react";
 import "./HomePage.scss";
-import { ReactComponent as Psi } from "../../assets/psi.svg";
 import Button from "../../components/Button/Button";
 import { ReactComponent as Badania } from "../../assets/badania.svg";
 import { ReactComponent as Contactus } from "../../assets/contactus.svg";
 import { ReactComponent as Wspolpraca } from "../../assets/wspolpraca.svg";
 import { ReactComponent as Info } from "../../assets/info.svg";
-import { ReactComponent as Car } from "../../assets/car.svg";
-import { ReactComponent as Certyfikat } from "../../assets/certyfikat.svg";
-import { ReactComponent as Map } from "../../assets/map.svg";
-import { ReactComponent as Ok } from "../../assets/ok.svg";
-import { ReactComponent as Brain } from "../../assets/brain.svg";
+import { ReactComponent as Heads } from "../../assets/heads.svg";
+import { motion } from "framer-motion";
+
+const Variants = {
+  initialHeader: {
+    left: "-150%",
+  },
+
+  animateHeader: {
+    left: "0%",
+    transition: { duration: 0.3 },
+  },
+
+  initialButtons: {
+    right: "-150%",
+  },
+
+  animateButtons: {
+    right: 0,
+    transition: { duration: 0.3 },
+  },
+
+  initialText: {
+    opacity: 0,
+  },
+
+  animateText: {
+    opacity: 1,
+    transition: { duration: 0.3, delay: [0.3] },
+  },
+};
 
 function HomePage() {
   return (
     <div className="HomePage">
       <div className="HomePage__wrapper">
         <section className="HomePage__content">
-          <div className="HomePage__content__HeaderWrapper">
-            <Psi className="psi-svg" alt="Psi" />
+          <motion.div
+            initial={"initialHeader"}
+            animate={"animateHeader"}
+            variants={Variants}
+            className="HomePage__content__HeaderWrapper"
+          >
+            <Heads className="psi-svg" alt="Psi" />
             <h1>Badanie Psychologiczne</h1>
-          </div>
-          <div className="HomePage__text">
-            <Brain className="Icons" />
+          </motion.div>
+          <motion.div
+            initial={"initialText"}
+            animate={"animateText"}
+            variants={Variants}
+            className="HomePage__text"
+          >
             <p>
               Badania psychologiczne z zakresu medycyny pracy i transportu
               drogowego.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="HomePage__text">
-            <Car className="Icons" />
+          <motion.div
+            initial={"initialText"}
+            animate={"animateText"}
+            variants={Variants}
+            className="HomePage__text"
+          >
             <p>Nowoczesna aparatura do badań kierowców.</p>
-          </div>
+          </motion.div>
 
-          <div className="HomePage__text">
-            <Certyfikat className="Icons" />
-            <p>Certyfikowane testy psychologiczne </p>
-          </div>
+          <motion.div
+            initial={"initialText"}
+            animate={"animateText"}
+            variants={Variants}
+            className="HomePage__text"
+          >
+            <p>Certyfikowane testy psychologiczne.</p>
+          </motion.div>
 
-          <div className="HomePage__text">
-            <Ok className="Icons" />
+          <motion.div
+            initial={"initialText"}
+            animate={"animateText"}
+            variants={Variants}
+            className="HomePage__text"
+          >
             <p>
               Dajemy rękojmie jakości i rzetelności prowadzonych badań
               psychologicznych.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="HomePage__text">
-            <Map className="Icons" />
+          <motion.div
+            initial={"initialText"}
+            animate={"animateText"}
+            variants={Variants}
+            className="HomePage__text"
+          >
             <p>
               Zapraszamy na badania psychologiczne klientów z Małopolski i
               Śląska.
             </p>
-          </div>
+          </motion.div>
         </section>
 
-        <section className="HomePage__Links">
+        <motion.section
+          initial={"initialButtons"}
+          animate={"animateButtons"}
+          variants={Variants}
+          className="HomePage__Links"
+        >
           <Button to="/badania" title="Badania">
             <Badania className="icon" />
           </Button>
@@ -69,7 +124,7 @@ function HomePage() {
           <Button to="/" title="O nas">
             <Info className="icon" />
           </Button>
-        </section>
+        </motion.section>
       </div>
     </div>
   );

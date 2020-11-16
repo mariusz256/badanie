@@ -3,10 +3,17 @@ import "./Button.scss";
 import { Link } from "react-router-dom";
 
 function Button(props) {
+  console.log(props.small);
   return (
     <Link className="Button" to={props.to}>
-      <div className="Card">
-        <h2 className="Card__title">{props.title}</h2>
+      <div className={!props.small ? "Card" : "Card Card--small"}>
+        <h2
+          className={
+            !props.small ? "Card__title" : "Card__title Card__title--small"
+          }
+        >
+          {props.title}
+        </h2>
         {props.children}
       </div>
     </Link>

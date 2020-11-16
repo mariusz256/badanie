@@ -1,6 +1,12 @@
 @import "../../utilities/variables";
 
+.header-wrapper {
+  position: relative;
+  height: 10rem;
+}
+
 .Header {
+  position: absolute;
   margin: 0;
   padding: 0;
   top: 0;
@@ -9,7 +15,7 @@
   background-color: rgba($color-secondary, 0.9);
 
   &__title {
-    margin: 0 auto;
+    position: relative;
     display: flex;
     height: 100%;
     width: max-content;
@@ -25,18 +31,23 @@
       text-decoration: none;
     }
 
-    &__Psi {
-      height: 7rem;
-      width: 7rem;
-      fill: $color-blue-dark;
-      opacity: 0.6;
+    &__Heads {
+      height: auto;
+      width: 20rem;
+      // tra
+      left: 0;
+      fill: $color-primary;
+      stroke: $color-primary;
+
       z-index: 1;
-      filter: drop-shadow(0rem 0rem 2rem $color-blue-dark);
+      filter: drop-shadow(0rem 0rem 2rem $color-blue-light);
     }
 
     &__text {
+      position: absolute;
       height: auto;
-      margin-left: -3.5rem;
+      width: max-content;
+      left: 10rem;
       color: $color-primary;
       font-size: 3.5rem;
       font-weight: 600;
@@ -45,7 +56,7 @@
   }
 
   &__menu {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0rem;
     height: 9rem;

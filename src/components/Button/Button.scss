@@ -16,11 +16,20 @@
   box-sizing: border-box;
   transition: all ease-in 0.1s;
 
+  &--small {
+    width: 35rem;
+    height: 25rem;
+  }
+
   &__title {
     margin: 0;
     padding: 0;
     font-size: 2.2rem;
     color: $color-primary;
+
+    &--small {
+      font-size: 2rem;
+    }
   }
 
   &:hover {
@@ -40,6 +49,11 @@
     color: $color-primary;
     transition: all ease-in 0.1s;
     fill: $color-blue-light !important;
+
+    &--small {
+      padding: 2.6rem;
+      height: 8rem;
+    }
   }
 }
 

@@ -23,17 +23,20 @@ body {
 }
 
 .App {
+  position: relative;
   min-height: 100vh;
   height: 100%;
   width: 100%;
   background-color: $color-primary;
   background-image: linear-gradient(
-      to right,
-      rgba($color-blue-light, 0.9),
-      rgba($color-primary, 0.5)
-    ),
-    url(./assets/plansza1.jpg);
-  background-position: top;
+    to right,
+    rgba($color-primary, 1),
+    rgba($color-blue-light, 1),
+    rgba($color-blue-light, 1)
+  );
+  // clip-path: url(./assets/heads.svg);
+
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   // background: linear-gradient(
