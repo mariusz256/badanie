@@ -1,96 +1,61 @@
 @import "../../utilities/variables";
 
-.header-wrapper {
-  position: relative;
-  height: 10rem;
-}
-
 .Header {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  height: 9rem;
-  width: 100%;
-  background-color: rgba($color-secondary, 0.9);
+  height: 20rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 10rem;
 
-  &__title {
-    position: relative;
-    display: flex;
-    height: 100%;
-    width: max-content;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
+  &__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 
-    &:visited,
-    &:link {
-      color: $color-primary;
-      text-decoration: none;
-    }
-
-    &__Heads {
-      height: auto;
-      width: 20rem;
-      // tra
-      left: 0;
-      fill: $color-primary;
-      stroke: $color-primary;
-
-      z-index: 1;
-      filter: drop-shadow(0rem 0rem 2rem $color-blue-light);
-    }
-
-    &__text {
-      position: absolute;
-      height: auto;
-      width: max-content;
-      left: 10rem;
-      color: $color-primary;
-      font-size: 3.5rem;
-      font-weight: 600;
-      z-index: 10;
-    }
-  }
-
-  &__menu {
-    position: absolute;
-    right: 0;
-    top: 0rem;
-    height: 9rem;
-    width: 9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-
-    &__hamburger {
-      position: relative;
-      height: 1rem;
-      width: 6rem;
-      background-color: $color-primary;
-      border-radius: 5px;
-
-      &::before,
-      &::after {
-        position: absolute;
-        content: "";
-        height: 1rem;
-        width: 6rem;
-        // top: 2rem;
-        background-color: $color-primary;
-        display: inline-block;
-        border-radius: 5px;
+    &__logo {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      h1 {
+        margin: 0;
+        padding: 0 1rem;
+        height: auto;
+        width: auto;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color-primary;
+        box-sizing: border-box;
       }
 
-      &::before {
-        top: 2rem;
+      &__svg {
+        height: 8rem;
+        width: auto;
+      }
+    }
+
+    &__links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__link {
+      &:active,
+      &:visited,
+      &:link {
+        text-decoration: none;
+        color: $color-secondary;
       }
 
-      &::after {
-        top: -2rem;
+      &--nav {
+        font-size: 2rem;
+        padding: 3rem;
+        color: $color-secondary;
+        font-weight: 400;
       }
     }
   }

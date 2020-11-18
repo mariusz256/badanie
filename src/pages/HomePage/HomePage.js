@@ -1,11 +1,8 @@
 import React from "react";
 import "./HomePage.scss";
+import { ReactComponent as Examination } from "../../assets/examination.svg";
 import Button from "../../components/Button/Button";
-import { ReactComponent as Badania } from "../../assets/badania.svg";
-import { ReactComponent as Contactus } from "../../assets/contactus.svg";
-import { ReactComponent as Wspolpraca } from "../../assets/wspolpraca.svg";
-import { ReactComponent as Info } from "../../assets/info.svg";
-import { ReactComponent as Heads } from "../../assets/heads.svg";
+
 import { motion } from "framer-motion";
 
 const Variants = {
@@ -40,91 +37,17 @@ const Variants = {
 function HomePage() {
   return (
     <div className="HomePage">
-      <div className="HomePage__wrapper">
-        <section className="HomePage__content">
-          <motion.div
-            initial={"initialHeader"}
-            animate={"animateHeader"}
-            variants={Variants}
-            className="HomePage__content__HeaderWrapper"
-          >
-            <Heads className="psi-svg" alt="Psi" />
-            <h1>Badanie Psychologiczne</h1>
-          </motion.div>
-          <motion.div
-            initial={"initialText"}
-            animate={"animateText"}
-            variants={Variants}
-            className="HomePage__text"
-          >
-            <p>
-              Badania psychologiczne z zakresu medycyny pracy i transportu
-              drogowego.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={"initialText"}
-            animate={"animateText"}
-            variants={Variants}
-            className="HomePage__text"
-          >
-            <p>Nowoczesna aparatura do badań kierowców.</p>
-          </motion.div>
-
-          <motion.div
-            initial={"initialText"}
-            animate={"animateText"}
-            variants={Variants}
-            className="HomePage__text"
-          >
-            <p>Certyfikowane testy psychologiczne.</p>
-          </motion.div>
-
-          <motion.div
-            initial={"initialText"}
-            animate={"animateText"}
-            variants={Variants}
-            className="HomePage__text"
-          >
-            <p>
-              Dajemy rękojmie jakości i rzetelności prowadzonych badań
-              psychologicznych.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={"initialText"}
-            animate={"animateText"}
-            variants={Variants}
-            className="HomePage__text"
-          >
-            <p>
-              Zapraszamy na badania psychologiczne klientów z Małopolski i
-              Śląska.
-            </p>
-          </motion.div>
-        </section>
-
-        <motion.section
-          initial={"initialButtons"}
-          animate={"animateButtons"}
-          variants={Variants}
-          className="HomePage__Links"
-        >
-          <Button to="/badania" title="Badania">
-            <Badania className="icon" />
-          </Button>
-          <Button to="/kontakt" title="Kontakt">
-            <Contactus className="icon" />
-          </Button>
-          <Button to="/" title="współpraca">
-            <Wspolpraca className="icon" />
-          </Button>
-          <Button to="/" title="O nas">
-            <Info className="icon" />
-          </Button>
-        </motion.section>
+      <div className="HomePage__content">
+        <div className="HomePage__content__wrapper">
+          <h2>
+            Certyfikowane testy psychologiczne z zakresu medycyny pracy i
+            transportu drogowego.
+          </h2>
+          <Button to="/badania">Nasza oferta</Button>
+        </div>
+      </div>
+      <div className="HomePage__picture">
+        <Examination className="HomePage__picture__svg" />
       </div>
     </div>
   );

@@ -1,62 +1,28 @@
 @import "../../utilities/variables";
 
-.Card {
+.Button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-secondary;
-  height: 35rem;
-  width: 30rem;
-  margin: 2rem;
-  border-radius: 1rem;
-  box-shadow: 1rem 1rem 2rem $color-secondary;
-  cursor: pointer;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  transition: all ease-in 0.1s;
+  height: 6rem;
+  width: 20rem;
+  background-color: $color_primary;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 
-  &--small {
-    width: 35rem;
-    height: 25rem;
+  @media only screen and (max-width: 640px) {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    height: 5rem;
+    width: 16rem;
   }
 
-  &__title {
-    margin: 0;
-    padding: 0;
-    font-size: 2.2rem;
-    color: $color-primary;
-
-    &--small {
-      font-size: 2rem;
-    }
+  &:active,
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: #fff;
   }
-
-  &:hover {
-    box-shadow: 1rem 1rem 5rem 1rem $color-secondary;
-    text-shadow: 0px 0px 2rem $color-green;
-    transform: perspective(1000px) translateZ(10rem);
-  }
-
-  &:hover .icon {
-    transform: perspective(1000px) translateZ(10rem);
-    filter: drop-shadow(0 0 1rem $color-green);
-  }
-
-  & .icon {
-    padding: 3rem;
-    height: 10rem;
-    color: $color-primary;
-    transition: all ease-in 0.1s;
-    fill: $color-blue-light !important;
-
-    &--small {
-      padding: 2.6rem;
-      height: 8rem;
-    }
-  }
-}
-
-.Button {
-  text-decoration: none;
 }

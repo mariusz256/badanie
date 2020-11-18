@@ -3,15 +3,27 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 37.5%;
+  }
+
+  // @media only screen and (max-width: 1000px) {
+  //   font-size: 25%;
+  // }
 }
 
 ::selection {
-  background-color: $color-green;
+  background-color: $color-secondary;
 
   color: #fff;
 }
@@ -27,21 +39,5 @@ body {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background-color: $color-primary;
-  background-image: linear-gradient(
-    to right,
-    rgba($color-primary, 1),
-    rgba($color-blue-light, 1),
-    rgba($color-blue-light, 1)
-  );
-  // clip-path: url(./assets/heads.svg);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background: linear-gradient(
-  //   to right,
-  //   $color-primary 50%,
-  //   $color-blue-dark 50%
-  // );
+  background-color: $color-blue-light;
 }

@@ -1,95 +1,84 @@
 @import "../../utilities/variables";
 
 .HomePage {
-  min-height: 100vh;
-  height: 100%;
-  align-items: flex-start;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  // overflow: hidden;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  // min-width: 1024px;
+  height: auto;
 
-  &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "content links";
-    z-index: 1;
-    margin-top: 3rem;
-    justify-content: center;
-    perspective: 1000px;
+  @media only screen and (max-width: 640px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   &__content {
-    grid-area: content;
-    padding: 0rem 0rem 0rem 0rem;
+    height: 100%;
 
-    &__HeaderWrapper {
-      height: auto;
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      padding-bottom: 0rem;
-
-      & h1 {
-        z-index: 10;
-        margin: 0;
-        padding: 0 0;
-        font-style: italic;
-        font-size: 5rem;
-        color: $color-secondary;
-        font-weight: 600;
-        height: 10rem;
-        display: flex;
-        align-items: center;
-
-        position: relative;
-      }
-      & .psi-svg {
-        height: 15rem;
-        width: auto;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        fill: $color-secondary;
-        stroke: $color-secondary;
-        filter: drop-shadow(1rem 1rem 2rem $color-secondary);
-      }
-    }
-  }
-
-  &__text {
-    min-height: 7rem;
-    font-size: 2rem;
-    font-style: oblique;
-    color: $color-secondary;
-    font-weight: 600;
-    line-height: 1.4;
-    padding: 2rem 0;
-    padding-left: 0rem;
-    width: 70%;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-
-    & p {
+    &__wrapper {
+      width: 80%;
+      height: 100%;
       margin: 0;
-      margin-top: 1rem;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media only screen and (max-width: 640px) {
+        align-items: center;
+        width: 100%;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 8rem;
+        width: auto;
+        font-size: 2.5rem;
+        color: $color-secondary;
+        font-weight: 500;
+
+        @media only screen and (max-width: 640px) {
+          text-align: center;
+          width: 60%;
+          padding-bottom: 4rem;
+        }
+      }
     }
   }
 
-  &__Links {
-    grid-area: links;
-    position: relative;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-self: center;
-    width: auto;
-    transform: rotateZ(5deg) rotateX(5deg);
-    padding: 0rem 0rem 0rem 0rem;
-    box-sizing: border-box;
+  &__picture {
+    display: flex;
+    justify-content: flex-end;
+    overflow: visible;
+    height: 100%;
+
+    @media only screen and (max-width: 640px) {
+      justify-content: center;
+    }
+    &__svg {
+      height: 60rem;
+      width: auto;
+
+      @media only screen and (max-width: 768px) {
+        height: 40rem;
+      }
+
+      #brain {
+        animation: updown 3s ease-in-out 0.3s infinite alternate;
+        // transition: all ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(1rem);
   }
 }

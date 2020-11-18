@@ -9,15 +9,11 @@ const HeaderVariants = {
 
 function Layout({ children }) {
   return (
-    <>
-      <Header
-        initial={"initial"}
-        animate={"animate"}
-        variants={HeaderVariants}
-      />
+    <div className="Layout">
+      <Header />
       <main>{children}</main>
       <footer></footer>
-    </>
+    </div>
   );
 }
 
