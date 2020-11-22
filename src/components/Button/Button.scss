@@ -12,11 +12,27 @@
   font-weight: bold;
   letter-spacing: 3px;
 
+  &--small {
+    height: 4rem;
+    width: 18rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: pointer;
+  }
+
   @media only screen and (max-width: 640px) {
     font-size: 1.7rem;
     letter-spacing: 1px;
     height: 5rem;
     width: 16rem;
+
+    &--small {
+      height: 3rem;
+      width: 14rem;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
   }
 
   &:active,

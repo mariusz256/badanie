@@ -43,7 +43,9 @@ function HomePage() {
             Certyfikowane testy psychologiczne z zakresu medycyny pracy i
             transportu drogowego.
           </h2>
-          <Button to="/badania">Nasza oferta</Button>
+          <Button class="" type="Link" to="/badania">
+            Nasza oferta
+          </Button>
         </div>
       </div>
       <div className="HomePage__picture">
