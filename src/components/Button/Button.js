@@ -9,9 +9,13 @@ function Button(props) {
   return (
     <>
       {props.type === "button" ? (
-        <div className={buttonClass.join(" ")} to={props.to}>
+        <button
+          onClick={props.onClick}
+          className={buttonClass.join(" ")}
+          to={props.to}
+        >
           {props.children}
-        </div>
+        </button>
       ) : (
         <Link className={buttonClass.join(" ")} to={props.to}>
           {props.children}

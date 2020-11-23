@@ -1,24 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./CardDetail.scss";
+import { ReactComponent as ListStyle } from "../../assets/list_style.svg";
 
 function CardDetail({ obj }) {
-  console.log(obj.lists);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
-  const content = (lists) => {
-    const arr = lists.forEach((element) => {
-      console.log(element);
-      const title = element.title;
-      return title;
+  const content = (content) => {
+    return content.map((el, i) => {
+      // eslint-disable-next-line default-case
+      switch (el.type) {
+        case "list":
+          return (
+            <div className="CardDetail__content__text" key={i}>
+              <h3 className="CardDetail__content__title--small">{el.title}</h3>
+              <ul>
+                {el.elements.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <ListStyle className="CardDetail__content__text__listStyle" />
+                      {item}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+
+        case "paragraph":
+          return (
+            <div className="CardDetail__content__text" key={i}>
+              <h3 className="CardDetail__content__title--small">{el.title}</h3>
+              <p>{el.elements}</p>
+            </div>
+          );
+
+        default:
+          return null;
+      }
     });
-    console.log(arr);
   };
+
+  console.log(content(obj.content));
 
   return (
     <div className="CardDetail">
       <div className="CardDetail__content">
         <h2 className="CardDetail__content__title">{obj.title}</h2>
         <p className="CardDetail__content__text">{obj.description}</p>
-        {content(obj.lists)}
+        {content(obj.content)}
       </div>
     </div>
   );

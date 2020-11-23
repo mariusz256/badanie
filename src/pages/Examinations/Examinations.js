@@ -26,11 +26,12 @@ const Items = [
     title: "Badanie kierowców",
     description:
       "Oferujemy Badania psychologiczne i lekarskie dla kierowców pojazdów wszystkich kategorii prawa jazdy. Wykonujemy na miejscu psychotesty dla kierowców – wyniki tego samego dnia. Nasi psychologowie prowadzą obowiązkowe badania psychotechniczne (po skierowaniu) oraz badania na życzenie klienta. Dodatkowo umawiamy terminy i prowadzimy badania lekarskie z zakresu medycyny pracy i transportu.",
-    lists: [
+    content: [
       {
         title:
           "Zapraszamy na badanie psychologiczne i psychotesty kierujących pojazdami:",
-        listElements: [
+        type: "list",
+        elements: [
           "kierowca samochodu służbowego kat. B prawa jazdy",
           "kierowca zawodowy ciężarówki lub autobusu kat. C, D, E prawa jazdy",
           "kandydat na prawo jazdy kat. C, D, E prawa jazdy",
@@ -52,7 +53,8 @@ const Items = [
       },
       {
         title: "Badania psychologiczne kierowców jakie możesz u nas wykonać:",
-        listElements: [
+        type: "list",
+        elements: [
           "psychotesty i badania psychologiczne dla kierowców prowadzących samochód służbowy. Wszyscy kierowcy korzystający z pojazdów samochodowych w ramach kategorii B prawa jazdy, mają obowiązek wykonać badanie psychologiczne.",
           "psychotesty i badania psychologiczne dla kierowców po zatrzymaniu prawa jazdy. Realizujemy badanie psychotechniczne po zatrzymaniu prawa jazdy, za jazdę po alkoholu, po narkotykach lub środkach działających podobnie, po spowodowaniu wypadku drogowego, po przekroczeniu punktów karnych.",
           "psychotesty i badania psychologiczne dla kandydatów na prawo jazdy kat C, D, E (samochód ciężarowy, autobus, przyczepy). Badanie psychotechniczne, jest niezbędne przed rozpoczęciem kursu na prawo jazdy do założenia profilu kandydata na kierowcę - zwanego skrótowo PKK.",
@@ -67,7 +69,8 @@ const Items = [
       },
       {
         title: "Badanie psychologiczne kierowców dzieli się na trzy etapy:",
-        listElements: [
+        type: "list",
+        elements: [
           "Badanie na aparaturach psychotechnicznych – sprawdzana jest psychomotoryka, głównie koordynacja wzrokowo ruchowa oraz czas reakcji na bodziec.",
           "Wywiad psychologiczny czyli rozmowa z psychologiem – ocena psychologa dotycząca odporności na stres czyli radzenia sobie w sytuacjach stresowych oraz dojrzałości społecznej.",
           "Badanie z wykorzystaniem testów psychologicznych – ocena profilu osobowości, sprawności intelektualnej oraz procesów poznawczych",
@@ -76,14 +79,15 @@ const Items = [
       {
         title:
           "Na czym polegają psychotesty dla kierowcy samochodu służbowego?",
-
-        listElements: [
+        type: "paragraph",
+        elements: [
           "Badania na wykorzystywanie samochodu do celów służbowych, sprawdzają predyspozycje do kierowania pojazdem służbowym, na kilku płaszczyznach istotnych dla bezpieczeństwa ruchu drogowego i jakości jazdy. Najczęściej sprawdzane są psychomotoryka, sprawność kierowcy pod kątem czasu reakcji, koncentracja uwagi, koordynacja wzrokowo ruchowa. Rzadkością nie jest badanie w ciemni kabinowej, obejmuje badanie widzenia zmierzchowego i badanie wrażliwości na olśnienie świetlne.",
         ],
       },
       {
         title: "",
-        listElements:
+        type: "paragraph",
+        elements:
           "Pracownia psychologiczna Drivemat posiada ciemnię kabinową, na której wykonuje badanie widzenia zmierzchowego oraz badanie na olśnienie kierowców.",
       },
     ],
@@ -91,7 +95,11 @@ const Items = [
 ];
 
 function Examinations() {
-  const [popup, setPopup] = useState(true);
+  const [popup, setPopup] = useState(false);
+  const detail = () => {
+    setPopup((popup) => !popup);
+    console.log(popup);
+  };
 
   return (
     <div className="Examinations">
@@ -99,12 +107,12 @@ function Examinations() {
       <Choice className="Examinations__svg" />
 
       <div className="Examinations__card-container">
-        <Card obj={Items[0]} />
-        <Card obj={Items[0]} />
-        <Card obj={Items[0]} />
-        <Card obj={Items[0]} />
-        <Card obj={Items[0]} />
-        <Card obj={Items[0]} />
+        <Card onClick={detail} obj={Items[0]} />
+        <Card onClick={detail} obj={Items[0]} />
+        <Card onClick={detail} obj={Items[0]} />
+        <Card onClick={detail} obj={Items[0]} />
+        <Card onClick={detail} obj={Items[0]} />
+        <Card onClick={detail} obj={Items[0]} />
       </div>
     </div>
   );
