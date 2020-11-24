@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  // position: relative;
 
   &__svg {
     height: 40rem;
@@ -12,5 +13,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3rem;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
   }
 }

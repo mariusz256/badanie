@@ -23,7 +23,7 @@ function Header(props) {
         <div className="Header__content__links">
           <Link
             className="Header__content__link Header__content__link--nav"
-            to="/"
+            to="/badania"
           >
             badania
           </Link>

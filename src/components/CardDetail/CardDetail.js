@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./CardDetail.scss";
 import { ReactComponent as ListStyle } from "../../assets/list_style.svg";
 
-function CardDetail({ obj }) {
+function CardDetail({ obj, exit }) {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -42,10 +42,11 @@ function CardDetail({ obj }) {
     });
   };
 
-  console.log(content(obj.content));
-
   return (
     <div className="CardDetail">
+      <div onClick={exit} className="CardDetail__cross__contianer">
+        <div className="CardDetail__cross__contianer__exit"></div>
+      </div>
       <div className="CardDetail__content">
         <h2 className="CardDetail__content__title">{obj.title}</h2>
         <p className="CardDetail__content__text">{obj.description}</p>

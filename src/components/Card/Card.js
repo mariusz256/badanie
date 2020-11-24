@@ -4,7 +4,11 @@ import Button from "../Button/Button";
 
 function Card(props) {
   const shortDescription = (description) => {
-    return description.split(".").slice(0, 2).join(". ") + "...";
+    if (description.split(".").length > 2) {
+      return description.split(".").slice(0, 2).join(". ") + "...";
+    } else {
+      return description;
+    }
   };
 
   return (
