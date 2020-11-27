@@ -1,27 +1,57 @@
+@import "../../utilities/variables";
+
 .Examinations {
+  padding: 30rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
   // position: relative;
 
   &__svg {
-    height: 40rem;
+    max-height: 40rem;
+    height: auto;
+    width: 90%;
     padding-bottom: 5rem;
+
+    @media only screen and (max-width: 1200px) {
+      height: 50%;
+    }
   }
 
   &__card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    justify-items: center;
 
-    @media only screen and (max-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 3rem;
+    @media only screen and (max-width: 1200px) {
+      width: 80%;
     }
 
-    @media only screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-gap: 3rem;
+    @media only screen and (max-width: 840px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 640px) {
+    }
+  }
+  h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8rem;
+    width: auto;
+    font-size: 2.5rem;
+    color: $color-secondary;
+    font-weight: 500;
+
+    @media only screen and (max-width: 640px) {
+      text-align: center;
+      width: 70%;
+      padding-bottom: 4rem;
     }
   }
 }

@@ -17,9 +17,9 @@ function Button(props) {
           {props.children}
         </button>
       ) : (
-        <Link className={buttonClass.join(" ")} to={props.to}>
+        <a href={props.to} className={buttonClass.join(" ")} to={props.to}>
           {props.children}
-        </Link>
+        </a>
       )}
     </>
   );

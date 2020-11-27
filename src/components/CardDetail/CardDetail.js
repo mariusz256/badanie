@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import "./CardDetail.scss";
 import { ReactComponent as ListStyle } from "../../assets/list_style.svg";
 
-function CardDetail({ obj, exit }) {
+function CardDetail({ obj, exit, cord }) {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    return () => {
+      window.scrollTo({ top: cord.y, left: cord.x, behavior: "smooth" });
+    };
   }, []);
 
   const content = (content) => {

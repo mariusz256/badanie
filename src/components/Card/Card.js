@@ -7,17 +7,20 @@ function Card(props) {
     if (description.split(".").length > 2) {
       return description.split(".").slice(0, 2).join(". ") + "...";
     } else {
-      return description;
+      return description + "..";
     }
   };
 
   return (
-    <div className={"Card"}>
+    <div className="Card">
       <div className="Card__content">
         <h3 className="Card__content__title">{props.obj.title}</h3>
         <p className="Card__content__text">
           {shortDescription(props.obj.description)}
         </p>
+      </div>
+
+      <div className="Card__button">
         <Button onClick={props.onClick} type="button" class="Button--small">
           Więcej
         </Button>

@@ -23,18 +23,33 @@ const Variants = {
 };
 
 function Examinations() {
-  // const text =
-  //   "- ochrony osobistej- ochrony osób- ochrony mienia- sportowych- łowieckich- szkoleniowych- kolekcjonerskich- pamiątkowych- rekonstrukcji historycznych";
-  // console.log(text.split("- "));
-
   const cardCreator = (elements) => {
     return elements.map((el) => {
-      return <Card onClick={() => detail(el)} obj={el} key={el.id} />;
+      return (
+        <Card
+          onClick={(e) => {
+            detail(el);
+            getCoordinates(e);
+          }}
+          obj={el}
+          key={el.id}
+        />
+      );
     });
+  };
+
+  const getCoordinates = (e) => {
+    console.log(e);
+
+    setScroll((scroll) => ({
+      x: window.pageXOffset,
+      y: window.pageYOffset,
+    }));
   };
 
   const [popup, setPopup] = useState(false);
   const [activeCard, setActiveCard] = useState({});
+  const [scroll, setScroll] = useState({});
 
   const detail = (el) => {
     setPopup((popup) => !popup);
@@ -42,7 +57,6 @@ function Examinations() {
   };
 
   const closeCardDetial = () => {
-    console.log("click");
     setPopup((popup) => false);
     setActiveCard((activeCard) => {});
   };
@@ -51,11 +65,12 @@ function Examinations() {
     <div className="Examinations">
       {popup ? (
         <>
-          <Backdrop onClick={closeCardDetial} />
-          <CardDetail exit={closeCardDetial} obj={activeCard} />{" "}
+          <Backdrop onClick={closeCardDetial}></Backdrop>
+          <CardDetail exit={closeCardDetial} cord={scroll} obj={activeCard} />
         </>
       ) : null}
-      <Choice className="Examinations__svg" />
+      <Choice id="badania" className="Examinations__svg" />
+      <h2>Nasza oferta</h2>
 
       <div className="Examinations__card-container">{cardCreator(Items)}</div>
     </div>

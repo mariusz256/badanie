@@ -338,6 +338,306 @@ const Items = [
       },
     ],
   },
+
+  {
+    id: 6,
+    title: "Badanie pozwolenie na obrót bronią i amunicją",
+    description: "Badanie na pozwolenie na obrót bronią i amunicją",
+    content: [
+      {
+        title:
+          "Badanie na pozwolenie na obrót bronią i amunicją przeprowadzane jest gdy:",
+        type: "list",
+        elements: [
+          "starasz się o koncesję na nabywanie, przechowywanie lub używanie materiałów wybuchowych o przeznaczeniu wojskowym lub policyjnym",
+          "ubiegasz się lub posiadasz prawo do wykonywania lub prowadzenia działalności gospodarczej albo bezpośrednio jesteś zatrudniony przy wytwarzaniu i obrocie materiałami wybuchowymi, bronią, amunicją oraz wyrobami  o  przeznaczeniu  wojskowym  lub policyjnym",
+          "jesteś przedsiębiorcą, masz dostęp lub przechowujesz materiały wybuchowe o przeznaczeniu wojskowym lub policyjnym",
+          "pracujesz w firmie posiadającej koncesję na wytwarzanie i obrót wyrobami o przeznaczeniu policyjnym lub wojskowym",
+        ],
+      },
+      {
+        title:
+          "Badanie pozwolenie na obrót bronią i amunicją wykonuje się gdy:",
+        type: "list",
+        elements: [
+          "zajmujesz się pokazami fajerwerków",
+          "realizujesz pokazy sceniczne, pirotechniczne i weselne",
+          "sprzedajesz fajerwerki, petardy, zimne ognie",
+          "produkujesz lub pracujesz przy produkcji fajerwerków",
+          "pracujesz w sklepie myśliwskim",
+          "ubiegasz się lub posiadasz pozwolenie na nabywanie oraz przechowywanie materiałów wybuchowych przeznaczonych do użytku cywilnego.",
+          "psychotesty i badania psychologiczne dla kierowców wyścigowych i kierowców rajdowych. Badania są niezbędne do uzyskania licencji kierowcy sportów motorowych.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    title: "Badanie ochroniarzy",
+    description:
+      "Badanie psychologiczne pracowników ochrony wykonywane jest w celu zbadania i wykluczenia zaburzenia funkcjonowania psychologicznego.",
+    content: [
+      {
+        title: "Badanie psychologiczne ochroniarzy jest niezbędne gdy:",
+        type: "list",
+        elements: [
+          "chcesz uzyskać licencję kwalifikowanego pracownika ochrony fizycznej,",
+          "chcesz przedłużyć licencję kwalifikowanego pracownika ochrony fizycznej,",
+          "ukończyłeś kurs kwalifikowanego pracownika ochrony fizycznej,",
+          "pracujesz z bronią obiektową,",
+          "pracujesz w ochronie mienia,",
+          "pracujesz w ochronie osobistej,",
+          "pracujesz ze środkami przymusu bezpośredniego jak gaz, kajdanki itp. itd.,",
+          "masz dostęp do broni obiektowej",
+        ],
+      },
+      {
+        title: "Badanie psychologiczne ochroniarzy polega na:",
+        type: "list",
+        elements: [
+          "Sprawdzeniu poziomu intelektu badanego",
+          "Ocenie cech osobowości oraz sprawdzenie funkcjonowania w sytuacjach stresowych i trudnych",
+          "Określenie dojrzałości emocjonalnej i społecznej",
+        ],
+      },
+
+      {
+        title: "",
+        type: "paragraph",
+        elements:
+          "Każde badanie psychologiczne jest indywidualne, w zależności od oceny psychologa może zostać rozszerzone o badania pozwalające na precyzyjną i dokładną ocenę badanego. Wyniki uzyskane przez badanego są niezbędne do rzetelnej oceny przez psychologa i wydanie orzeczenia psychologicznego.",
+      },
+
+      {
+        title: "",
+        type: "paragraph",
+        elements:
+          "Zapraszamy na badanie psychologiczne pracowników ochrony oraz osób ubiegających się o wpis do rejestry kwalifikowanych pracowników ochrony fizycznej. Oferujemy badania okresowe pracowników przeprowadzając testy psychologiczne dla pracowników ochrony. Badania psychotesty dla ochroniarza oznacza nic innego jak badanie psychologiczne, badanie psychotechniczne, badanie licencyjne do wpisu na listę kwalifikowanych pracowników ochrony fizycznej. Pomimo różnej terminologii i nazewnictwa badań psychologicznych oznaczają to samo badanie.",
+      },
+
+      {
+        title: "",
+        type: "paragraph",
+        elements:
+          "Należy pamiętać że badania ochroniarzy są badaniami okresowymi. W praktyce oznacza to, że pracownik ochrony powinien przejść badania okresowe co 3 lata. Badanie licencyjne ochroniarzy należy obowiązkowo odnowić. W tym celu konieczne jest wykonanie badania psychologicznego i lekarskiego. Badanie psychologiczne dla pracownika ochrony trwa zwykle około 90 min. Czas badania uzależniony jest od tempa pracy badanego tzn. czytania, pisania, rozwiązywania testów. Pracownik ochrony powinien przystąpić do badania wypoczęty i wyspany. Samopoczucie może mieć istotny wpływ na wyniki  badanego. Ochroniarz powinien mieć ze sobą dokument tożsamości. Badanie psychologiczne kwalifikowanego pracownika ochrony kończy się wydaniem orzeczenia stwierdzającego brak lub istnienie przeciwwskazać do wykonywania zawodu pracownika ochrony.",
+      },
+    ],
+  },
+
+  {
+    id: 8,
+    title: "Badanie sędziów",
+    description:
+      "Badanie psychotechniczne sędziego polega na ocenie i wykluczeniu przeciwwskazań psychologicznych od objęcia urzędu / stanowiska sędziego. Badanie psychologiczne kończy się oceną i otrzymaniem orzeczenia.",
+    content: [
+      {
+        title: "Badanie psychologiczne sędziów dotyczy:",
+        type: "list",
+        elements: [
+          "Zbadania poziomu intelektu",
+          "Zbadania poziomu dojrzałości społecznej i emocjonalnej",
+          "Zbadania cech osobowości oraz radzenia w sytuacjach stresujących",
+        ],
+      },
+      {
+        title: "",
+        type: "paragraph",
+        elements:
+          "Badanie psychologiczne o sprawowanie urzędu sędziego obejmuje wywiad bezpośredni z psychologiem oraz przeprowadzenie badania w postaci psychotestów do rozwiązania. Psycholog na ich podstawie opisuje cechy osobowości badanego w płaszczyźnie umiejętności poznawczych i społecznych. Szczególny nacisk podczas badania kładzie się na zdolność do samodzielnej oceny sytuacji, podejmowania decyzji oraz odporności na pracę w warunkach stresowych. Psycholog po przeprowadzonym badaniu wydaje orzeczenie dotyczące sprawności psychologicznej do sprawowania urzędu sędziego.",
+      },
+    ],
+  },
+
+  {
+    id: 9,
+    title: "Badanie prokuratorów",
+    description: "Badanie psychologiczne prokuratora",
+    content: [
+      {
+        title: "Badanie psychologiczne prokuratora polega na:",
+        type: "list",
+        elements: [
+          "Zbadaniu poziomu intelektu",
+          "Zbadaniu poziomu dojrzałości społecznej i emocjonalnej",
+          "Zbadaniu cech osobowości oraz radzenia w sytuacjach stresujących",
+        ],
+      },
+
+      {
+        title: "",
+        type: "paragraph",
+        elements: [
+          "Badanie psychologiczne prokuratora może wykonywać psycholog z uprawnieniami bo badania osób posiadających broń. Zapis ten dotyczy także sytuacji kiedy badana osoba nie posiada lub nie wyraża chęci posiadania pozwolenia na broń. ",
+          "psychotesty i badania psychologiczne dla kierowców wyścigowych i kierowców rajdowych. Badania są niezbędne do uzyskania licencji kierowcy sportów motorowych.",
+        ],
+      },
+      {
+        title: "Badanie psychologiczne jest niezbędne dla:",
+        type: "list",
+        elements: [
+          "prokuratora",
+          "asesora prokuratorskiego",
+          "aplikanta aplikacji prokuratorskiej",
+        ],
+      },
+      {
+        title: "Badanie psychologiczne jest niezbędne w sytuacji gdy:",
+        type: "list",
+        elements: [
+          "kandydujesz na aplikację prokuratorską",
+          "starasz się o pracę na asesora prokuratorskiego",
+          "startujesz w konkursie na stanowisko prokuratora",
+        ],
+      },
+      {
+        title: "",
+        type: "paragraph",
+        elements:
+          "Po zakończeniu badania otrzymujesz orzeczenie psychologiczne dla prokuratora. Orzeczenie dotyczy braku lun istnieniu przeciwwskazań do pracy na stanowiska prokuratora. Normalnym jest że badani rozwijający swoją karierę przechodzą badanie kilkukrotnie.",
+      },
+    ],
+  },
+
+  {
+    id: 10,
+    title: "Badanie komorników",
+    description:
+      "Przeprowadzamy psychotesty dla osób przed egzaminem na komornika oraz przed objęciem urzędu / stanowiska komornika.",
+    content: [
+      {
+        title: "Badanie psychologiczne dotyczy sprawdzenia obszaru:",
+        type: "list",
+        elements: [
+          "Zbadaniu poziomu intelektu",
+          "Cech osobowości oraz kontrola radzenia sobie w sytuacjach trudnych",
+          "Poziomu dojrzałości emocjonalnej i funkcjonowania społecznego",
+        ],
+      },
+
+      {
+        title: "",
+        type: "paragraph",
+        elements: [
+          "Badanie psychologiczne komornika ma za zadanie weryfikacje stanu zdrowia psychicznego pod kątem sprawdzenia czy nie ma przeciwwskazań psychologicznych do wykonywania obowiązków komornika. Badanie kończy się podsumowaniem wyników oraz wydaniem orzeczenia psychologicznego.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 11,
+    title: "Badanie kuratorów",
+    description:
+      "Realizujemy badanie psychologiczne dla kuratorów niezbędne do objęcia urzędu / stanowiska kuratora.",
+    content: [
+      {
+        title:
+          "W myśl obowiązujących przepisów i aktów prawnych badania psychologiczne kuratorów obejmują:",
+        type: "list",
+        elements: [
+          "Rozmowę z psychologiem celem wywiadu i obserwacji",
+          "Psychotesty w celu weryfikacji predyspozycji badanego.",
+        ],
+      },
+      {
+        title: "Badanie psychologiczne dotyczy sprawdzenia:",
+        type: "list",
+        elements: [
+          "Poziomu inteligencji",
+          "Cech osobowości oraz radzenia sobie w sytuacjach trudnych",
+          "Poziomu dojrzałości emocjonalnej i funkcjonowania społecznego",
+        ],
+      },
+      {
+        title: "",
+        type: "parahraph",
+        elements: [
+          "Badanie psychotechniczne kuratora ma na celu ocenę stanu zdrowia psychicznego pod kątem weryfikacji przeciwwskazań psychologicznych do wykonywania obowiązków kuratora. Badanie kończy się podsumowaniem wyników oraz wydaniem orzeczenia psychologicznego.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 12,
+    title: "Badanie detektywów",
+    description:
+      "Zapraszamy na badania psychologiczne dla detektywów w naszej pracowni psychologicznej.",
+    content: [
+      {
+        title: "Badanie psychotechniczne powinieneś przejść gdy:",
+        type: "list",
+        elements: [
+          "- jesteś uczestnikiem kursu detektywistycznego",
+          "uczestniczysz w kursie na licencje detektywa",
+          "jesteś detektywem",
+          "otwierasz lub prowadzisz działalność wykonującą usługi detektywistyczne",
+        ],
+      },
+
+      {
+        title: "",
+        type: "parahraph",
+        elements: [
+          "Badanie psychologiczne dla detektywów prowadzone jest w celu uzyskania opinii psychologa o braku bądź istnieniu przeciwwskazań do ubiegania się lub posiadania licencji detektywa. Osoba wykonująca ten zawód powinna ponownie wykonać badania po upływie terminu ważności dokumentów lub co 5 lat.",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 13,
+    title: "Badanie Służby Leśnej",
+    description:
+      "Prowadzimy badania psychologiczne dla funkcjonariuszy Służby Leśnej.",
+    content: [
+      {
+        title: "Psycholog podczas badania psychotechnicznego dokonuje oceny:",
+        type: "list",
+        elements: [
+          "poziomu inteligencji",
+          "cech osobowości",
+          "funkcjonowania w sytuacjach trudnych i stresujących",
+          "poziomu dojrzałości emocjonalnej i społecznej badanego",
+        ],
+      },
+
+      {
+        title: "",
+        type: "parahraph",
+        elements: [
+          "Wykonanie badania psychotechnicznego za pomocą psychotestów ma na celu wykluczenie zaburzeń funkcjonowania psychologicznego u osoby badanej. Badanie kończy się podsumowaniem wyników oraz wydaniem orzeczenia psychologicznego.",
+        ],
+      },
+    ],
+  },
+  {
+    id: 14,
+    title: "Badanie Inspektorów Transportu Drogowego",
+    description:
+      "Zapraszamy na badania psychologiczne dla inspektorów ruchu drogowego.",
+    content: [
+      {
+        title:
+          "Badanie psychologiczne pracowników ITD dotyczy oceny w obszarach:",
+        type: "list",
+        elements: [
+          "Badania na aparaturach psychotechnicznych – polega na sprawdzeniu koordynacji wzrokowo ruchowej oraz refleksu.",
+          "Wywiadu psychologicznego czyli rozmowy z psychologiem – polega na ocenie dojrzałości społecznej, funkcjonowania społecznego, funkcjonowania w sytuacji trudnych.",
+          "Badania z wykorzystaniem testów psychologicznych – polega na weryfikacji sprawności intelektualnej oraz procesów poznawczych.",
+        ],
+      },
+
+      {
+        title: "",
+        type: "parahraph",
+        elements: [
+          "Jeśli chcesz zostać inspektorem ITD lub pracujesz już na stanowisku inspektora transportu drogowego zapraszamy do wykonania badania psychologicznego.",
+        ],
+      },
+    ],
+  },
 ];
 
 export default Items;

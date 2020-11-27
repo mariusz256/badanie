@@ -14,31 +14,31 @@ function Header(props) {
       variants={props.variants}
     >
       <div className="Header__content">
-        <Link className="Header__content__link" to="/">
+        <a href="#home" className="Header__content__link">
           <div className="Header__content__logo">
             <Logo className="Header__content__logo__svg" />
             <h1>Badanie Psychologiczne</h1>
           </div>
-        </Link>
+        </a>
         <div className="Header__content__links">
-          <Link
+          <a
+            href="#badania"
             className="Header__content__link Header__content__link--nav"
-            to="/badania"
           >
             badania
-          </Link>
-          <Link
+          </a>
+          <a
+            href="#kontakt"
             className="Header__content__link Header__content__link--nav"
-            to="/"
           >
             kontakt
-          </Link>
-          <Link
+          </a>
+          <a
+            href="#info"
             className="Header__content__link Header__content__link--nav"
-            to="/"
           >
             o nas
-          </Link>
+          </a>
         </div>
       </div>
     </motion.header>
