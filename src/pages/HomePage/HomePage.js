@@ -5,35 +5,6 @@ import Button from "../../components/Button/Button";
 
 import { motion } from "framer-motion";
 
-const Variants = {
-  initialHeader: {
-    left: "-150%",
-  },
-
-  animateHeader: {
-    left: "0%",
-    transition: { duration: 0.3 },
-  },
-
-  initialButtons: {
-    right: "-150%",
-  },
-
-  animateButtons: {
-    right: 0,
-    transition: { duration: 0.3 },
-  },
-
-  initialText: {
-    opacity: 0,
-  },
-
-  animateText: {
-    opacity: 1,
-    transition: { duration: 0.3, delay: [0.3] },
-  },
-};
-
 function HomePage() {
   return (
     <div id="home" className="HomePage">

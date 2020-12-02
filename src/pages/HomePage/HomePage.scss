@@ -7,7 +7,7 @@
   width: 90%;
   height: auto;
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -16,14 +16,14 @@
     height: 100%;
 
     &__wrapper {
-      width: 80%;
+      width: 90%;
       height: 100%;
       margin: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      @media only screen and (max-width: 640px) {
+      @media only screen and (max-width: 800px) {
         align-items: center;
         width: 100%;
       }
@@ -35,9 +35,10 @@
         font-size: 2.5rem;
         color: $color-secondary;
         font-weight: 500;
+        // text-align: justify;
 
-        @media only screen and (max-width: 640px) {
-          text-align: center;
+        @media only screen and (max-width: 800px) {
+          text-align: justify;
           width: 70%;
           padding-bottom: 4rem;
         }
@@ -49,36 +50,84 @@
     display: flex;
     justify-content: flex-end;
     overflow: visible;
-    height: 100%;
+    height: 40rem;
+    position: relative;
+    width: auto;
 
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 800px) {
       grid-row-start: 1;
       justify-content: center;
     }
+
     &__svg {
+      display: block;
+      top: 0;
+      left: 0;
+      // position: absolute;
       height: 40rem;
+      max-width: 95vw;
       width: auto;
 
-      @media only screen and (max-width: 768px) {
-        height: 40rem;
+      #right,
+      #right_2,
+      #right_3,
+      #right_4 {
+        animation: right-spin 4s ease infinite;
+        animation-delay: 2s;
+        transform-origin: center;
+        transform-box: fill-box;
       }
 
-      #brain {
-        animation: updown 3s ease-in-out 0.3s infinite alternate;
-        // transition: all ease-in-out;
+      #left,
+      #left_2 {
+        animation: left-spin 4s ease infinite;
+        animation-delay: 2s;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+
+      @media only screen and (max-width: 768px) {
+        height: 30rem;
       }
     }
   }
 }
 
-@keyframes updown {
+@keyframes right-spin {
   0% {
-    transform: translateY(0rem);
+    transform: rotateZ(0deg);
   }
   50% {
-    transform: translateY(2rem);
+    transform: rotateZ(360deg);
   }
   100% {
-    transform: translateY(1rem);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes left-spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes light {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
   }
 }

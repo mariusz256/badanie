@@ -1,0 +1,59 @@
+@import "../../utilities/variables";
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8rem;
+    width: auto;
+    font-size: 2.5rem;
+    color: $color-secondary;
+    font-weight: 500;
+
+    @media only screen and (max-width: 640px) {
+      text-align: center;
+      width: 70%;
+      padding-bottom: 4rem;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    width: auto;
+    font-size: 2.2rem;
+    color: $color-secondary;
+    font-weight: 500;
+
+    @media only screen and (max-width: 640px) {
+      text-align: center;
+      width: 70%;
+      padding-bottom: 4rem;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: $color-secondary;
+  }
+
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+
+  &__svg {
+    max-height: 20rem;
+    height: auto;
+    padding: 2rem 0;
+  }
+}

@@ -9,14 +9,13 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  // @media only screen and (max-width: 1440px) {
-  //   font-size: 50%;
-  // }
-
   @media only screen and (max-width: 1200px) {
     font-size: 50%;
   }
 
+  @media only screen and (max-width: 320px) {
+    font-size: 37.5%;
+  }
   scroll-behavior: smooth;
 
   // @media only screen and (max-width: 1000px) {
@@ -39,9 +38,7 @@ body {
 .App {
   position: relative;
   min-height: 100vh;
-  // height: 100%;
   width: 100%;
   background: $color-primary;
   background-image: $linear-gradient-1;
-  // background-image: linear-gradient(to left, #30d5c8, #f3ecdb);
 }

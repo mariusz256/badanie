@@ -8,7 +8,7 @@ function CardDetail({ obj, exit, cord }) {
     return () => {
       window.scrollTo({ top: cord.y, left: cord.x, behavior: "smooth" });
     };
-  }, []);
+  });
 
   const content = (content) => {
     return content.map((el, i) => {

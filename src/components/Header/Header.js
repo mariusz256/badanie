@@ -1,47 +1,74 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
-import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+import useWindowDimensions from "../../utilities/useWindowDimensions";
+import useScrollPosition from "../../utilities/useScrollPosition";
+
+import Backdrop from "../Backdrop/Backdrop";
 
 import { motion } from "framer-motion";
 
 function Header(props) {
+  const { height, width } = useWindowDimensions();
+
+  const scrollPosition = useScrollPosition();
+
+  console.log(width, height, scrollPosition);
+
+  const [dropMenu, setDropMenu] = useState(false);
+
+  const handleMenu = () => {
+    setDropMenu((dropMenu) => !dropMenu);
+  };
+
+  const normalMenu = (modifier = "") => (
+    <div className={`Header__content__links Header__content__links${modifier}`}>
+      <a
+        href="#badania"
+        className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
+      >
+        badania
+      </a>
+      <a
+        href="#kontakt"
+        className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
+      >
+        kontakt
+      </a>
+      <a
+        href="#info"
+        className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
+      >
+        o nas
+      </a>
+    </div>
+  );
+
+  const smallMenu = (
+    <nav onClick={handleMenu} className="Header__content__dropBox">
+      <div className="Header__content__dropBox__button"></div>
+    </nav>
+  );
+
   return (
-    <motion.header
-      className="Header"
-      initial={props.initial}
-      animate={props.animate}
-      variants={props.variants}
-    >
-      <div className="Header__content">
-        <a href="#home" className="Header__content__link">
-          <div className="Header__content__logo">
-            <Logo className="Header__content__logo__svg" />
-            <h1>Badanie Psychologiczne</h1>
-          </div>
-        </a>
-        <div className="Header__content__links">
-          <a
-            href="#badania"
-            className="Header__content__link Header__content__link--nav"
-          >
-            badania
+    <>
+      <motion.header className="Header">
+        <div className="Header__content">
+          <a href="#home" className="Header__content__link">
+            <div className="Header__content__logo">
+              <Logo className="Header__content__logo__svg" />
+              <h1>Badanie Psychologiczne</h1>
+            </div>
           </a>
-          <a
-            href="#kontakt"
-            className="Header__content__link Header__content__link--nav"
-          >
-            kontakt
-          </a>
-          <a
-            href="#info"
-            className="Header__content__link Header__content__link--nav"
-          >
-            o nas
-          </a>
+          {dropMenu && width <= 800 ? (
+            <>
+              <Backdrop onClick={handleMenu}>{normalMenu("--mobile")}</Backdrop>
+            </>
+          ) : null}
+          {width > 800 ? normalMenu() : smallMenu}
         </div>
-      </div>
-    </motion.header>
+      </motion.header>
+    </>
   );
 }
 
