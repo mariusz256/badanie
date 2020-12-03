@@ -1,19 +1,17 @@
 import React from "react";
 import "./Layout.scss";
 import Header from "../Header/Header";
-
-const HeaderVariants = {
-  initial: { top: "-100%" },
-  animate: { top: 0, transition: { duration: 0.33 } },
-};
+import Footer from "../Footer/Footer";
 
 function Layout({ children }) {
   return (
-    <div className="Layout">
-      <Header />
-      <main>{children}</main>
-      <footer></footer>
-    </div>
+    <>
+      <div className="Layout">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </>
   );
 }
 

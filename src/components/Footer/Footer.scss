@@ -1,1 +1,54 @@
 @import "../../utilities/variables";
+
+.Footer {
+  position: absolute;
+  width: 100vw;
+  height: 10rem;
+  background-color: $color-primary;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: space-around;
+
+  &__author {
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    // margin: 0 0 0 4rem;
+    font-size: 1.6rem;
+
+    &__mail {
+      &:active,
+      &:visited,
+      &:link {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    font-weight: 500;
+    width: 50%;
+    justify-content: flex-end;
+
+    &__link {
+      padding: 0;
+      margin-right: 2rem;
+
+      &:active,
+      &:visited,
+      &:link {
+        text-decoration: none;
+        color: #fff;
+      }
+      @media only screen and (max-width: 520px) {
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
+}

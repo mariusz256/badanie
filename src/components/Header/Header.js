@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import useWindowDimensions from "../../utilities/useWindowDimensions";
-import useScrollPosition from "../../utilities/useScrollPosition";
 
 import Backdrop from "../Backdrop/Backdrop";
 
-import { motion } from "framer-motion";
-
 function Header(props) {
-  const { height, width } = useWindowDimensions();
-
-  const scrollPosition = useScrollPosition();
-
-  console.log(width, height, scrollPosition);
+  const { width } = useWindowDimensions();
 
   const [dropMenu, setDropMenu] = useState(false);
 
@@ -23,23 +16,33 @@ function Header(props) {
 
   const normalMenu = (modifier = "") => (
     <div className={`Header__content__links Header__content__links${modifier}`}>
+      {modifier === "" ? null : (
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+        <a
+          href="home"
+          className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
+        >
+          <p>home</p>
+        </a>
+      )}
+
       <a
         href="#badania"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
-        badania
+        <p>badania</p>
       </a>
       <a
         href="#kontakt"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
-        kontakt
+        <p>kontakt</p>
       </a>
       <a
         href="#info"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
-        o nas
+        <p>o nas</p>
       </a>
     </div>
   );
@@ -52,7 +55,7 @@ function Header(props) {
 
   return (
     <>
-      <motion.header className="Header">
+      <header className="Header">
         <div className="Header__content">
           <a href="#home" className="Header__content__link">
             <div className="Header__content__logo">
@@ -67,7 +70,7 @@ function Header(props) {
           ) : null}
           {width > 800 ? normalMenu() : smallMenu}
         </div>
-      </motion.header>
+      </header>
     </>
   );
 }

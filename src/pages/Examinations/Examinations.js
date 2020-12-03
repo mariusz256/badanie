@@ -7,21 +7,6 @@ import Backdrop from "../../components/Backdrop/Backdrop";
 
 import { ReactComponent as Choice } from "../../assets/choice.svg";
 
-import { motion } from "framer-motion";
-
-const Variants = {
-  initialButtons: {
-    opacity: 0.3,
-    rotateY: "90deg",
-  },
-
-  animateButtons: {
-    opacity: 1,
-    rotateY: "0deg",
-    transition: { duration: 0.3, delay: 0.1 },
-  },
-};
-
 function Examinations() {
   const cardCreator = (elements) => {
     return elements.map((el) => {
@@ -39,8 +24,6 @@ function Examinations() {
   };
 
   const getCoordinates = (e) => {
-    console.log(e);
-
     setScroll((scroll) => ({
       x: window.pageXOffset,
       y: window.pageYOffset,
