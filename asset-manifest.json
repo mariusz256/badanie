@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/badanie/static/css/main.366acc43.chunk.css",
-    "main.js": "/badanie/static/js/main.cf00c44d.chunk.js",
-    "main.js.map": "/badanie/static/js/main.cf00c44d.chunk.js.map",
+    "main.js": "/badanie/static/js/main.8c8ff6e1.chunk.js",
+    "main.js.map": "/badanie/static/js/main.8c8ff6e1.chunk.js.map",
     "runtime-main.js": "/badanie/static/js/runtime-main.6c6f8a27.js",
     "runtime-main.js.map": "/badanie/static/js/runtime-main.6c6f8a27.js.map",
     "static/js/2.1a1be653.chunk.js": "/badanie/static/js/2.1a1be653.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.6c6f8a27.js",
     "static/js/2.1a1be653.chunk.js",
     "static/css/main.366acc43.chunk.css",
-    "static/js/main.cf00c44d.chunk.js"
+    "static/js/main.8c8ff6e1.chunk.js"
   ]
 }
