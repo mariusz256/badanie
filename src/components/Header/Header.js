@@ -19,7 +19,7 @@ function Header(props) {
       {modifier === "" ? null : (
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a
-          href="home"
+          href="#home"
           className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
         >
           <p>home</p>
