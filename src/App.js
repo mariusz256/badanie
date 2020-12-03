@@ -1,8 +1,8 @@
-import HomePage from "./pages/HomePage/HomePage";
-import Examinations from "./pages/Examinations/Examinations";
+import HomePage from "./containers/HomePage/HomePage";
+import Examinations from "./containers/Examinations/Examinations";
 import Layout from "./components/Layout/Layout";
-import Contact from "./pages/Contact/Contact";
-import About from "./pages/About/About";
+import Contact from "./containers/Contact/Contact";
+import About from "./containers/About/About";
 
 function App() {
   return (
