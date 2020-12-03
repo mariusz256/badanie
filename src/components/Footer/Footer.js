@@ -15,7 +15,7 @@ function Footer() {
       </div>
 
       <div className="Footer__links">
-        <a href="home" className="Footer__links__link">
+        <a href="#home" className="Footer__links__link">
           <p>home</p>
         </a>
 
