@@ -91,12 +91,14 @@
     }
 
     &__links {
+      width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
 
       &--mobile {
         align-items: flex-end;
+        justify-content: center;
         width: 70%;
         flex-direction: column;
         animation: menu ease-out 0.5s;
