@@ -2,7 +2,7 @@
 
 .Footer {
   position: absolute;
-  width: 100vw;
+  min-width: 100vw;
   height: 10rem;
   background-color: $color-primary;
   bottom: 0;
@@ -10,6 +10,7 @@
   align-items: center;
   font-size: 2rem;
   justify-content: space-around;
+  margin: 0;
 
   &__author {
     float: left;
