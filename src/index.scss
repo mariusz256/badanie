@@ -8,7 +8,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
   box-sizing: border-box;
-
   overflow-x: hidden;
 
   @media only screen and (max-width: 1200px) {
@@ -47,4 +46,5 @@ body {
   width: 100%;
   background: $color-primary;
   background: $linear-gradient-2;
+  background-size: cover;
 }
