@@ -26,7 +26,7 @@ function Footer() {
         <Link to="/#kontakt" className="Footer__links__link">
           <p>kontakt</p>
         </Link>
-        <Link to="/info" className="Footer__links__link">
+        <Link to="/info/#info" className="Footer__links__link">
           <p>o nas</p>
         </Link>
       </div>
