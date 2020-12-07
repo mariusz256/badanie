@@ -11,7 +11,7 @@
 .About {
   position: relative;
   min-height: 40rem;
-  width: 100%;
+  width: 90%;
   margin: 4rem 0 0 0;
   border-radius: 1rem;
   display: flex;
@@ -25,7 +25,7 @@
   }
 
   @media only screen and (max-width: 840px) {
-    width: 80%;
+    width: 90%;
   }
 
   @media only screen and (max-width: 640px) {
@@ -69,9 +69,9 @@
     z-index: 1;
     line-height: 1.2;
 
-    @media only screen and (max-width: 1440px) {
-      font-size: 50%;
-    }
+    // @media only screen and (max-width: 1440px) {
+    //   font-size: 50%;
+    // }
 
     &--margin {
       margin-top: 10rem;

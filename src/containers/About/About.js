@@ -35,7 +35,9 @@ function About() {
           192/2019 i jest wpisana do rejestru Marszałka Wojewódzkiego
           Województwa Małopolskiego.
         </p>
+      </div>
 
+      <div id="info" className="About">
         <h2 className="About__title">Współpraca</h2>
         <p className="About__text">
           Mamy otwarte umysły dlatego nasz psycholog transportu chętnie nawiąże

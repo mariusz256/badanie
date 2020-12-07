@@ -10,6 +10,7 @@
   @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 95%;
   }
 
   &__content {

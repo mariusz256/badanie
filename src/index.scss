@@ -13,8 +13,12 @@ html {
     font-size: 50%;
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 540px) {
     font-size: 37.5%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 31.25%;
   }
   scroll-behavior: smooth;
 
@@ -40,5 +44,6 @@ body {
   min-height: 100vh;
   width: 100%;
   background: $color-primary;
-  background-image: $linear-gradient-1;
+  background: $linear-gradient-2;
+  background-size: cover;
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import useWindowDimensions from "../../utilities/useWindowDimensions";
+import { HashLink as Link } from "react-router-hash-link";
 
 import Backdrop from "../Backdrop/Backdrop";
 
@@ -18,32 +19,32 @@ function Header(props) {
     <div className={`Header__content__links Header__content__links${modifier}`}>
       {modifier === "" ? null : (
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
-        <a
-          href="#home"
+        <Link
+          to="/"
           className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
         >
           <p>home</p>
-        </a>
+        </Link>
       )}
 
-      <a
-        href="#badania"
+      <Link
+        to="/#badania"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
         <p>badania</p>
-      </a>
-      <a
-        href="#kontakt"
+      </Link>
+      <Link
+        to="/#kontakt"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
         <p>kontakt</p>
-      </a>
-      <a
-        href="#info"
+      </Link>
+      <Link
+        to="/info"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
         <p>o nas</p>
-      </a>
+      </Link>
     </div>
   );
 
@@ -57,12 +58,12 @@ function Header(props) {
     <>
       <header className="Header">
         <div className="Header__content">
-          <a href="#home" className="Header__content__link">
+          <Link to="/" className="Header__content__link">
             <div className="Header__content__logo">
               <Logo className="Header__content__logo__svg" />
               <h1>Badanie Psychologiczne</h1>
             </div>
-          </a>
+          </Link>
           {dropMenu && width <= 800 ? (
             <>
               <Backdrop onClick={handleMenu}>{normalMenu("--mobile")}</Backdrop>

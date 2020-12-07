@@ -35,14 +35,18 @@
   }
 
   &__content {
-    // position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 10;
+    text-align: justify;
 
     &--justify {
       justify-items: center;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      text-align: left;
     }
 
     &__title {

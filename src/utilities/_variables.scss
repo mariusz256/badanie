@@ -1,3 +1,5 @@
+$image-url: url("./assets/img-1.jpg");
+
 $color-primary: #143d42;
 $color-secondary: #000000;
 $color-green-light: #5ce6aa;
@@ -13,3 +15,13 @@ $linear-gradient-1: linear-gradient(
   #a4f995,
   #bcff8f
 );
+
+$linear-gradient-2: linear-gradient(
+    to right,
+    rgba(92, 230, 170, 0.75),
+    rgba(117, 237, 163, 0.75),
+    rgba(141, 243, 156, 0.75),
+    rgba(164, 249, 149, 0.75),
+    rgba(188, 255, 143, 0.75)
+  ),
+  url("./assets/img-1.jpg") no-repeat top center fixed;

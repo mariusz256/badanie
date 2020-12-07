@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Footer() {
   return (
@@ -15,19 +16,19 @@ function Footer() {
       </div>
 
       <div className="Footer__links">
-        <a href="#home" className="Footer__links__link">
+        <Link to="/#home" className="Footer__links__link">
           <p>home</p>
-        </a>
+        </Link>
 
-        <a href="#badania" className="Footer__links__link">
+        <Link to="/#badania" className="Footer__links__link">
           <p>badania</p>
-        </a>
-        <a href="#kontakt" className="Footer__links__link">
+        </Link>
+        <Link to="/#kontakt" className="Footer__links__link">
           <p>kontakt</p>
-        </a>
-        <a href="#info" className="Footer__links__link">
+        </Link>
+        <Link to="/info" className="Footer__links__link">
           <p>o nas</p>
-        </a>
+        </Link>
       </div>
     </footer>
   );
