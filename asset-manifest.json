@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/badanie/static/css/main.f9e907d3.chunk.css",
-    "main.js": "/badanie/static/js/main.6825353d.chunk.js",
-    "main.js.map": "/badanie/static/js/main.6825353d.chunk.js.map",
+    "main.css": "/badanie/static/css/main.a9c654d3.chunk.css",
+    "main.js": "/badanie/static/js/main.881df465.chunk.js",
+    "main.js.map": "/badanie/static/js/main.881df465.chunk.js.map",
     "runtime-main.js": "/badanie/static/js/runtime-main.6c6f8a27.js",
     "runtime-main.js.map": "/badanie/static/js/runtime-main.6c6f8a27.js.map",
-    "static/js/2.b52cd3a7.chunk.js": "/badanie/static/js/2.b52cd3a7.chunk.js",
-    "static/js/2.b52cd3a7.chunk.js.map": "/badanie/static/js/2.b52cd3a7.chunk.js.map",
+    "static/js/2.05f097f0.chunk.js": "/badanie/static/js/2.05f097f0.chunk.js",
+    "static/js/2.05f097f0.chunk.js.map": "/badanie/static/js/2.05f097f0.chunk.js.map",
     "index.html": "/badanie/index.html",
-    "static/css/main.f9e907d3.chunk.css.map": "/badanie/static/css/main.f9e907d3.chunk.css.map",
-    "static/js/2.b52cd3a7.chunk.js.LICENSE.txt": "/badanie/static/js/2.b52cd3a7.chunk.js.LICENSE.txt",
+    "static/css/main.a9c654d3.chunk.css.map": "/badanie/static/css/main.a9c654d3.chunk.css.map",
+    "static/js/2.05f097f0.chunk.js.LICENSE.txt": "/badanie/static/js/2.05f097f0.chunk.js.LICENSE.txt",
     "static/media/adress.26c524da.svg": "/badanie/static/media/adress.26c524da.svg",
     "static/media/choice.54b8b552.svg": "/badanie/static/media/choice.54b8b552.svg",
     "static/media/index.scss": "/badanie/static/media/img-1.c162d443.jpg",
+    "static/media/img-2.5b916423.jpg": "/badanie/static/media/img-2.5b916423.jpg",
+    "static/media/img-3.419b3c33.jpg": "/badanie/static/media/img-3.419b3c33.jpg",
+    "static/media/img-5.7e23e595.jpg": "/badanie/static/media/img-5.7e23e595.jpg",
     "static/media/list_style.199952ba.svg": "/badanie/static/media/list_style.199952ba.svg",
     "static/media/logo.f4e0a279.svg": "/badanie/static/media/logo.f4e0a279.svg",
     "static/media/logo2.e0aa40a2.svg": "/badanie/static/media/logo2.e0aa40a2.svg",
@@ -21,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6c6f8a27.js",
-    "static/js/2.b52cd3a7.chunk.js",
-    "static/css/main.f9e907d3.chunk.css",
-    "static/js/main.6825353d.chunk.js"
+    "static/js/2.05f097f0.chunk.js",
+    "static/css/main.a9c654d3.chunk.css",
+    "static/js/main.881df465.chunk.js"
   ]
 }
