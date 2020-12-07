@@ -1,9 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.scss";
+import Backdrop from "../../components/Backdrop/Backdrop";
+
+import image3 from "../../assets/img-3.jpg";
+import image2 from "../../assets/img-2.jpg";
+import image5 from "../../assets/img-5.jpg";
 
 function About() {
+  const [zoomImg, setZoomImg] = useState({ backdrop: false, img: "" });
+  const handleZoom = (img) => {
+    setZoomImg((prevState) => ({
+      ...prevState,
+      backdrop: !prevState.backdrop,
+      img: img || "",
+    }));
+  };
+
   return (
     <div className="AboutWrapper">
+      {!zoomImg.backdrop ? null : (
+        <Backdrop onClick={handleZoom}>
+          <div className="About__full-img">
+            <img src={zoomImg.img} alt={zoomImg.img} />
+          </div>
+        </Backdrop>
+      )}
+
+      <div id="info" className="About__img-container">
+        <img
+          className="About__img-container__img"
+          src={image3}
+          alt={image3}
+          onClick={() => handleZoom(image3)}
+        />
+        <img
+          className="About__img-container__img"
+          src={image2}
+          alt={image2}
+          onClick={() => handleZoom(image2)}
+        />
+        <img
+          className="About__img-container__img"
+          src={image5}
+          alt={image5}
+          onClick={() => handleZoom(image5)}
+        />
+      </div>
+
       <div id="info" className="About">
         <h2 className="About__title">O nas</h2>
 
