@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout";
 import Contact from "./containers/Contact/Contact";
 import About from "./containers/About/About";
 import { Switch, Route } from "react-router-dom";
+import React from "react";
 
 function App() {
   return (

@@ -40,6 +40,7 @@ function Examinations() {
   };
 
   const closeCardDetial = () => {
+    console.log("click");
     setPopup((popup) => false);
     setActiveCard((activeCard) => {});
   };
