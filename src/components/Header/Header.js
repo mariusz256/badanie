@@ -40,7 +40,7 @@ function Header(props) {
         <p>kontakt</p>
       </Link>
       <Link
-        to="/info/#info"
+        to="/info"
         className={`Header__content__link Header__content__link--nav Header__content__link${modifier}`}
       >
         <p>o nas</p>
